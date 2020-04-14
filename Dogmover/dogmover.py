@@ -198,6 +198,7 @@ def push_dashboards():
 
 def push_monitors():
     count = 0
+    err_count=0
     monitors = _files_to_json("monitors")
     if not monitors:
         exit("No monitors are locally available. Consider pulling monitors first.")
